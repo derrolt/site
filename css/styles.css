@@ -1,0 +1,205 @@
+/*CSS RESET*/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/*///////////////////////////////////////////////*/
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "JetBrains Mono", monospace;
+	background-color: #000;
+}
+
+li {
+	list-style-type: none;
+}
+
+#fixed-nav {
+	background-color: #1F1F1F;
+	color: #fff;
+	padding: 1rem 0;
+	height: 5rem;
+}
+
+
+#fixed-nav h1 {
+	display: none;
+	font-weight: 800;
+	margin: 0 0 0 3rem;
+	padding: 0;
+	line-height: 0.9;
+}
+
+
+#fixed-nav lowertext {
+	position: relative;
+	top: 5rem;
+}
+
+	#fixed-nav img {
+		width: 2.5rem;
+		margin-left: 3rem;
+		float:left;
+	}
+
+	#nav-items {
+		text-align: center;
+		display: flex;
+    float: right;
+    margin-right: 3rem;
+    height: 5rem;
+	}
+
+	#nav-items a {
+		padding: 10px;
+    border: 1px solid #000;
+    height: 5rem;
+    line-height: 3rem;
+    color:#fff;
+    border: none;
+	}
+
+#scroll-gallery {
+	padding: 3rem;
+	color: #fff;
+}
+
+#scroll-gallery img {
+			margin-bottom: 1rem;
+	}
+
+#gallery-item {
+	margin-bottom: 5rem;
+}
+
+footer {
+	clear: both;
+	height: 5rem;
+}
+
+footer p {
+	line-height: 5rem;
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+	color: #808080;
+}
+
+@media all and (min-width: 60em) {
+
+	#fixed-nav {
+		z-index: 1;
+		padding: 0;
+		width: 25rem;
+		margin: 0;
+		height: 100%;
+		position: fixed;
+		float: left;
+	}
+
+	#fixed-nav h1 {
+		display:block;
+		text-align: center;
+		margin: 0;
+	}
+
+	#fixed-nav img {
+		margin:auto;
+		width: 3rem;
+		float: none;
+	}
+
+	#logo {
+		margin-top: 6rem;
+	}
+
+	#nav-items {
+		text-align: center;
+		margin-top: 5rem;
+		display: block;
+    float: none;
+    margin-right: 0;
+    height: 0;
+	}
+
+	#scroll-gallery {
+		width: calc(100% - 25rem);
+		float: right;
+		padding: 6rem;
+	}
+
+	footer {
+		position: fixed;
+		bottom: 3rem;
+		z-index: 2;
+		width: 25rem;
+		color: #FFF;
+	}
+
+}
+
+
+
+@media all and (min-width: 70em) {
+
+	#scroll-gallery img {
+			max-height: 900px;
+	}
+
+}

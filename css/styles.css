@@ -94,7 +94,7 @@ li {
 
 	#fixed-nav img {
 		width: 2.5rem;
-		margin-left: 3rem;
+		margin-left: 1rem;
 		float:left;
 	}
 
@@ -102,7 +102,7 @@ li {
 		text-align: center;
 		display: flex;
     float: right;
-    margin-right: 3rem;
+    margin-right: 1rem;
     height: 5rem;
 	}
 
@@ -116,7 +116,7 @@ li {
 	}
 
 #scroll-gallery {
-	padding: 3rem;
+	padding: 1rem;
 	color: #fff;
 }
 
